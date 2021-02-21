@@ -1,10 +1,12 @@
 import Newsletter from "../../models/newsletter";
+import dbConnect from "../../util/mongodb";
 
 // newsletter signup api endpoint
 
 export default async (req, res) => {
   let { name, email } = req.body;
   try {
+    await dbConnect();
     let newsletterUser = await new Newsletter({
       name: name,
       email: email,
