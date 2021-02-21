@@ -177,6 +177,7 @@ export default function Header({ home }) {
         <Icon
           show={show}
           src={src}
+          alt="menu icon"
           onClick={() => {
             if (!show) {
               setShow(true);

@@ -81,7 +81,7 @@ export default function Item({ items }) {
                 />
               </Col>
               <ColImg md={6}>
-                <Img src={items.image} />
+                <Img src={items.image} alt="vinyl cover" />
               </ColImg>
               <ColImg md={6}>
                 <About>

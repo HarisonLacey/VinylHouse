@@ -73,6 +73,7 @@ export default function Slide({ items }) {
     <SlideContainer>
       <IconBlockLeft>
         <Icon
+          alt="left arrow"
           onClick={() => {
             if (counter !== 0) {
               setCounter(counter - 1);
@@ -94,6 +95,7 @@ export default function Slide({ items }) {
       </SlideText>
       <IconBlockRight>
         <Icon
+          alt="right arrow"
           onClick={() => {
             if (counter !== items.length - 1) {
               setCounter(counter + 1);

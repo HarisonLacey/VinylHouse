@@ -105,6 +105,7 @@ export default function Newsletter() {
       <Form show={show} onSubmit={formHandle}>
         <Close
           src="images/close-button.png"
+          alt="close icon"
           onClick={() => {
             setClose(true);
             setShow(false);

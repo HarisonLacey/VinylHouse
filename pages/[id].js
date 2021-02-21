@@ -107,7 +107,7 @@ export default function Category({ items, text }) {
                         >
                           <a>
                             <ItemCard>
-                              <img src={e.image} />
+                              <img src={e.image} alt="vinyl cover" />
                               <ThumbnailText>
                                 <p>{e.artist}</p>
                                 <p>{e.title}</p>
