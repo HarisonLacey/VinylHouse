@@ -2,6 +2,8 @@
 
 This is a website, built using Next.js, for the fake record store VinylHouse.
 
+This website relies on pre-fetching data during build time using Next.js getStaticProps functionality.
+
 Users are able to subscribe to VinylHouse's newsletter.
 
 ## Installation
@@ -17,7 +19,7 @@ https://vinyl-house.vercel.app/
 
 ## GitHub Link
 
-https://github.com/HarisonLacey/CoffeeElite
+https://github.com/HarisonLacey/VinylHouse
 
 ## licence
 
