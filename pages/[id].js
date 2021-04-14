@@ -153,8 +153,7 @@ export async function getStaticPaths() {
     const res = await Items.find({});
     let categories = [];
     await JSON.parse(JSON.stringify(res)).forEach((e) => {
-      if (!categories.includes(e.category))
-        categories.push(e.category.toString());
+      if (!categories.includes(e.category)) categories.push(e.category);
     });
     const paths = categories.map((e) => ({
       params: { id: e },
