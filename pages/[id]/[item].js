@@ -122,12 +122,7 @@ export async function getStaticPaths() {
   try {
     await dbConnect();
     const res = await Items.find({});
-    const item = res.map((e) => {
-      let vinyl = e.toObject();
-      vinyl._id = vinyl._id.toString();
-      return vinyl;
-    });
-    const paths = item.map((e) => ({
+    const paths = JSON.parse(JSON.stringify(res)).map((e) => ({
       params: { id: e.category, item: e._id },
     }));
     return {

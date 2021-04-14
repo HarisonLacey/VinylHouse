@@ -221,14 +221,9 @@ export async function getStaticProps() {
   try {
     await dbConnect();
     const res = await Items.find({});
-    let items = await res.map((e) => {
-      let item = e.toObject();
-      item._id = item._id.toString();
-      return item;
-    });
     return {
       props: {
-        items: items,
+        items: JSON.parse(JSON.stringify(res)),
       },
       revalidate: 1,
     };
