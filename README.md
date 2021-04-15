@@ -9,7 +9,7 @@ Users are able to subscribe to VinylHouse's newsletter.
 ## Installation
 
 1. Copy folder to local machine
-2. Create your Environment Variables
+2. Create your Environment Variables -> MONGODB_URI=*your database link*
 3. Navigate to folder and type "npm run dev" command
 4. Open http://localhost:3000 to view in browser
 
