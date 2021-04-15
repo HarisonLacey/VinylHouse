@@ -146,7 +146,7 @@ export async function getStaticProps({ params }) {
     console.log(err.message);
   }
 }
-// create category page paths
+// create all the category page paths
 export async function getStaticPaths() {
   try {
     await dbConnect();
