@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
 
 // stretch block component
@@ -76,7 +76,6 @@ const Text = styled.h1.attrs(({ underline, fancy, theme }) => ({
 
 // stretch block code
 export default function StretchBlock({
-  id,
   dir,
   top,
   para,
@@ -93,6 +92,7 @@ export default function StretchBlock({
   fancy,
 }) {
   const [move, setMove] = useState(false);
+  const ID = useRef();
   // check whether component is in viewport
   useEffect(() => {
     function inView(el) {
@@ -105,12 +105,10 @@ export default function StretchBlock({
     }
     if (!stat) {
       window.addEventListener("scroll", () => {
-        if (inView(document.getElementById(id))) {
-          setMove(true);
-        }
-      });
+        if (inView(ID.current))setMove(true);
+        });
     }
-  }, [id, stat]);
+  }, [ID, stat]);
 
   return (
     <>
@@ -118,11 +116,11 @@ export default function StretchBlock({
       {link && (
         <a href={`/${text.toLowerCase()}`}>
           <Stretch
+            ref={ID}
             para={para}
             url={url}
             top={top}
             dir={dir}
-            id={id}
             move={move}
             stat={stat}
             link={link}
@@ -139,11 +137,11 @@ export default function StretchBlock({
       {/* if stretch block is not a link */}
       {!link && (
         <Stretch
+          ref={ID}
           para={para}
           url={url}
           top={top}
           dir={dir}
-          id={id}
           move={move}
           stat={stat}
           bg={bg}

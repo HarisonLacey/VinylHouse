@@ -148,7 +148,6 @@ export default function Header({ home }) {
                 >
                   <p className="itemText">{e.toUpperCase()}</p>
                 </MenuItem>
-
                 <HR></HR>
               </>
             );
