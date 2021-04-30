@@ -76,7 +76,6 @@ export default function Home({ items }) {
               stat
               text="Vinyl. For. Days"
               dir
-              id="7"
               top="150px"
               overflow="visible"
               underline
@@ -101,7 +100,6 @@ export default function Home({ items }) {
               size="5em"
               link
               text="ROCK"
-              id="1"
               top="50px"
               underline
             />
@@ -109,7 +107,6 @@ export default function Home({ items }) {
               text=""
               para
               url="/images/store.jpg"
-              id="1"
               dir
               top="50px"
               attach="fixed"
@@ -119,7 +116,6 @@ export default function Home({ items }) {
               size="5em"
               link
               text="POP"
-              id="2"
               top="350px"
               underline
             />
@@ -127,7 +123,6 @@ export default function Home({ items }) {
               text=""
               para
               url="/images/store.jpg"
-              id="2"
               dir
               top="350px"
               attach="fixed"
@@ -137,7 +132,6 @@ export default function Home({ items }) {
               size="5em"
               link
               text="RAP"
-              id="3"
               top="650px"
               underline
             />
@@ -145,7 +139,6 @@ export default function Home({ items }) {
               text=""
               para
               url="/images/store.jpg"
-              id="3"
               dir
               top="650px"
               attach="fixed"
@@ -159,13 +152,11 @@ export default function Home({ items }) {
               color="black"
               size="2em"
               text="23 Longstreet, Cape Town"
-              id="4"
               top="50px"
               stat
               underline
             />
             <Block
-              id="4"
               para
               url="/images/pile.jpg"
               stat
@@ -174,7 +165,6 @@ export default function Home({ items }) {
               attach="fixed"
             />
             <Block
-              id="5"
               para
               url="/images/pile.jpg"
               stat
@@ -185,7 +175,6 @@ export default function Home({ items }) {
               color="black"
               size="2em"
               text="vhouse@gmail"
-              id="5"
               dir
               top="350px"
               bg
@@ -196,12 +185,10 @@ export default function Home({ items }) {
               color="black"
               size="2em"
               text="987 888 567"
-              id="6"
               top="650px"
               underline
             />
             <Block
-              id="6"
               para
               url="/images/pile.jpg"
               stat
